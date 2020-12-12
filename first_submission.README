@@ -1,9 +1,0 @@
-The following section shows a graphical representation of the results of the three classification models, including **accuracy, precision, recall, and f-score.**
-
-![](https://lh4.googleusercontent.com/ARc2NZ6r6Cupw4o9ukd2ijP9MOgXecpUlwvn1auC85qH9ZOuLuN2zbUqPdn2vu-adJKFw4Rj_Y1Qe-OErOmxkMtQmeUj44Ar01csp9zcEWX2nj02Lmu6hA-nhBRiVjlGbsJTFPU)
-
-![](https://lh6.googleusercontent.com/a8DHz8f4HQFhfBojFVZdX8qccbR5egf_db7eOyP_gAJJxniHxKSEtYldWmlohX_4vmnhZBdd5aQszrFRnvHyLM7Sp7zcREW_9jwSXVtEjWXF1QngE1YciXe6LeNsyUNHAH2z7k0)
-
-I used sklearn.svm. SVC for fitting the biclass machine model, sklearn.linear_model. LogisticRegression for classification training, and sklearn.ensemble. RandomForestClassifier for fitting the data, in which the results for the accuracy, precision, recall, and f1 scores during the SVC training were *0.9908379916276039, 0.9908379916276039, 0.9908379916276039, 0.49769895681845366*; 'The results of the training process in RandomForestClassifier, precision, accuracy, recall, and f1 score are *0.9908379916276039, 0.9908379916276039. 0.9908379916276039, 0.49769895681845366*; during the training of LogisticRegression, accuracy, precision, recall, and f1 scores resulted in *0.9855363096282556. 0.9855363096282556, 0.9855363096282556,* and *0.628832223924925*.
-
-It shows that larger precision rates represent more accurate classification results for the model. However, if you continue to use logistic regression training and test set prediction performance both begin to suffer. It appears that both the random forest model and the support vector machine model have the strongest performance on the retest set.
