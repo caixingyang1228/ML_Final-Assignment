@@ -26,11 +26,11 @@ To improve the result, I tried several methods. I tidy the dataset first, which 
 
 The ROC graph of training set(the closest the upper-left corner, the best performance):
 
-![](ML_4.png)
+![](./ML_4.png)
 
 The ROC graph of test set(the closest the upper-left corner, the best performance):
 
-![](ML_5.png)
+![](./ML_5.png)
 
 
 
@@ -53,7 +53,7 @@ To improve the result, I tidyed the dataset by low-casing and remove some common
 0.55 precision, 0.62 recall in tidied version.
 
 
-![](ML_1.png)
+![](./ML_1.png)
 
 ```python
 # lowcasing
@@ -73,7 +73,7 @@ print("common words removal complete")
 Also, since the number of features is too large, I attemped to use dimension reduction. But the results show dimension reduction can lead a large negative effect. The performance of SVM becomes: 0.89 accuracy, 0.44 precision, 0.2 recall in this version.
 
 
-![](ML_2.png)
+![](./ML_2.png)
 
 ```python
 svd = decomposition.TruncatedSVD(512)
@@ -84,7 +84,7 @@ X = svd.fit_transform(X)
 
 To make a better performance, I use sklearn to tune the parameters of xgboost by cross-validation. After carefully search, I get these parameters: learning_rate: 0.1, max_depth: 10, and lead to a better performance.
 
-![](ML_3.png)
+![](./ML_3.png)
 
 Also, in the stage of model assessment, I use f1-score which combine precision and recall to assess models. As what I expected, Xgboost achieved the best score.
 
